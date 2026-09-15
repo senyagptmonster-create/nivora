@@ -1,24 +1,7 @@
 import 'package:flutter/material.dart';
+import 'nivora_app.dart';
 
-import 'app/brand.dart';
-import 'app/theme.dart';
-import 'product/product_app.dart';
-
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const RootApp());
-}
-
-class RootApp extends StatelessWidget {
-  const RootApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: kAppTitle,
-      debugShowCheckedModeBanner: false,
-      theme: AppTheme.build(),
-      home: const ProductApp(),
-    );
-  }
+  runApp(const NivoraApp());
 }

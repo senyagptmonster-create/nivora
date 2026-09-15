@@ -1,10 +1,9 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:nivora/product/product_app.dart';
+import 'package:nivora/nivora_app.dart';
 
 void main() {
-  testWidgets('Smoke test', (WidgetTester tester) async {
-    await tester.pumpWidget(const MaterialApp(home: ProductApp()));
-    expect(find.byType(ProductApp), findsOneWidget);
+  testWidgets('NivoraApp smoke test', (WidgetTester tester) async {
+    await tester.pumpWidget(const NivoraApp());
+    expect(find.byType(NivoraApp), findsOneWidget);
   });
 }
