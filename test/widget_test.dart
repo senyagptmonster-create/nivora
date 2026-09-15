@@ -4,6 +4,7 @@ import 'package:nivora/nivora_app.dart';
 void main() {
   testWidgets('NivoraApp smoke test', (WidgetTester tester) async {
     await tester.pumpWidget(const NivoraApp());
-    expect(find.byType(NivoraApp), findsOneWidget);
+    await tester.pump();
+    expect(find.text('Nivora Circadian Flow'), findsWidgets);
   });
 }
